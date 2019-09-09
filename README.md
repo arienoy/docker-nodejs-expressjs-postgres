@@ -23,7 +23,7 @@ docker-compose up --build
 
 1. For validating the succesful activation - open a browser & navigate to 'http://localhost:4000'. the expected output is (in json format) - {"info":"Node.js, Express, and Postgres REST API"} .Another option is to open a second shell window & run command:
 
-```sh
+```bash
 curl http://localhost:4000  
 ```
 
@@ -31,25 +31,26 @@ curl http://localhost:4000
 2. For checking the REST API - 
     POST: run command (with values instead of <..> ) :    for linux-
 
-```sh curl --header "Content-type:application/json" --request POST --data '{"name":"<name>","age":<value>}' http://localhost:4000/api/v1/persons 
+```bash
+curl --header "Content-type:application/json" --request POST --data '{"name":"<name>","age":<value>}' http://localhost:4000/api/v1/persons 
 ```   
    
    for windows -
 
-```sh
+```bash
 curl --header "Content-type:application/json" --request POST --data "{\"name\":\"<name>\",\"age\":<value>}" http://localhost:4000/api/v1/persons
 ```
 
     in a second shell. The expected output is: 'Person added with name: <name> & age: <value>' .Note that if you'll try to insert the same person twice - the request will fail & the output will be: 'request failed'.
     GET: navigate to 'http://localhost:4000/api/v1/persons/?age=<value>' in your browser or run command:   
    
-```sh
+```bash
 curl http://localhost:4000/api/v1/persons/?age=<value>
 ```      
 
     in a second shell. The expected output is the DB query result. Note that is you run this before entering any persons to the DB (via POST) you'll get an empty set - [ ] as result.
 8. For closing the App use Ctrl+c. For removing any dungling containers run command:    
 
-```sh
+```bash
 docker-compose down
 ```
