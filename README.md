@@ -31,7 +31,8 @@ curl http://localhost:4000
 
    (for the same output).
 2. For checking the REST API - 
-    POST: run command (with values instead of <..> ) :    for linux-
+    POST: run command (with values instead of <..> ) :
+    for linux-
 
 ```bash
 curl --header "Content-type:application/json" --request POST --data '{"name":"<name>","age":<value>}' http://localhost:4000/api/v1/persons 
