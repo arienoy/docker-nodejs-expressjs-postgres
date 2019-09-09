@@ -1,7 +1,7 @@
 {
   "name": "webproject",
   "version": "1.0.0",
-  "description": "Express web api",
+  "description": "nodejs expressjs postgres web api",
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
