@@ -53,6 +53,7 @@ curl http://localhost:4000/api/v1/persons/?age=<value>
 ```  
 
    in a second shell. The expected output is the DB query result. Note that is you run this before entering any persons to the DB (via POST) you'll get an empty set - [ ] as result.
+   
 3. For closing the App use Ctrl+c. For removing any dungling containers run command:    
 
 ```bash
