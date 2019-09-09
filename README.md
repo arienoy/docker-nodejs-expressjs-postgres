@@ -30,7 +30,7 @@ docker-compose up --build
 curl http://localhost:4000  
 ```
 
-   (for the same output).\n
+   (for the same output).
 2. For checking the REST API - 
     POST: run command (with values instead of <..> ) :
     for linux-
@@ -53,7 +53,7 @@ curl http://localhost:4000/api/v1/persons/?age=<value>
 ```  
 
    in a second shell. The expected output is the DB query result. Note that is you run this before entering any persons to the DB (via POST) you'll get an empty set - [ ] as result.
-8. For closing the App use Ctrl+c. For removing any dungling containers run command:    
+3. For closing the App use Ctrl+c. For removing any dungling containers run command:    
 
 ```bash
 docker-compose down
