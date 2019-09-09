@@ -32,7 +32,7 @@ curl http://localhost:4000
    (for the same output).
    
 2. For checking the REST API - 
-    POST: run command (with values instead of <..> ) :
+   POST: run command (with values instead of <..> ) :
     for linux-
 
 ```bash
@@ -46,7 +46,7 @@ curl --header "Content-type:application/json" --request POST --data "{\"name\":\
 ```
 
    in a second shell. The expected output is: 'Person added with name: <name> & age: <value>' .Note that if you'll try to insert the same person twice - the request will fail & the output will be: 'request failed'.
-    GET: navigate to `http://localhost:4000/api/v1/persons/?age=<value>` in your browser or run command:   
+   GET: navigate to `http://localhost:4000/api/v1/persons/?age=<value>` in your browser or run command:   
    
 ```bash
 curl http://localhost:4000/api/v1/persons/?age=<value>
