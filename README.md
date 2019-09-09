@@ -19,6 +19,7 @@ docker-compose up --build
 ```
 
    for building & running the app (2 containers) using docker compose. No need to create user, db nor schema in postgresql, that is done by the app itself using the first docker container (contains the postgres image) & sql script provided in the app.
+   
 4. After the build is done - the App is up & running (the output 'App running on port 4000' should appear in shell).
 
 ### Test
