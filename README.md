@@ -29,8 +29,8 @@ docker-compose up --build
 ```bash
 curl http://localhost:4000  
 ```
-
    (for the same output).
+   
 2. For checking the REST API - 
     POST: run command (with values instead of <..> ) :
     for linux-
