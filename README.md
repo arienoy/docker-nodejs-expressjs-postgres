@@ -24,7 +24,7 @@ docker-compose up --build
 
 ### Test
 
-1. For validating the succesful activation - open a browser & navigate to 'http://localhost:4000'. the expected output is (in json format) - {"info":"Node.js, Express, and Postgres REST API"} . Another option is to open a second shell window & run command:
+1. For validating the succesful activation - open a browser & navigate to `http://localhost:4000`. the expected output is (in json format) - {"info":"Node.js, Express, and Postgres REST API"} . Another option is to open a second shell window & run command:
 
 ```bash
 curl http://localhost:4000  
@@ -46,7 +46,7 @@ curl --header "Content-type:application/json" --request POST --data "{\"name\":\
 ```
 
    in a second shell. The expected output is: 'Person added with name: <name> & age: <value>' .Note that if you'll try to insert the same person twice - the request will fail & the output will be: 'request failed'.
-    GET: navigate to 'http://localhost:4000/api/v1/persons/?age=&lt;value&gt;' in your browser or run command:   
+    GET: navigate to `http://localhost:4000/api/v1/persons/?age=<value>` in your browser or run command:   
    
 ```bash
 curl http://localhost:4000/api/v1/persons/?age=<value>
