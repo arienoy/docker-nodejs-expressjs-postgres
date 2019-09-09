@@ -6,7 +6,7 @@ WORKDIR /app
 COPY ./project/package.json /app
 COPY ./project/package-lock.json /app
 
-RUN npm install
+RUN npm ci
 
 # copy sql script
 COPY ./project/scripts/init.sql /docker-entrypoint-initdb.d/init.sql
