@@ -23,7 +23,7 @@ docker-compose up --build
 
 ### Test
 
-1. For validating the succesful activation - open a browser & navigate to 'http://localhost:4000'. the expected output is (in json format) - {"info":"Node.js, Express, and Postgres REST API"} .Another option is to open a second shell window & run command:
+1. For validating the succesful activation - open a browser & navigate to 'http://localhost:4000'. the expected output is (in json format) - {"info":"Node.js, Express, and Postgres REST API"} . Another option is to open a second shell window & run command:
 
 ```bash
 curl http://localhost:4000  
