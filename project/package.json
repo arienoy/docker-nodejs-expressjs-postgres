@@ -1,0 +1,18 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "Express web api",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arienoy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "pg": "^7.12.1"
+  }
+}

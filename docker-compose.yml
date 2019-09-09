@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+
+  # 1st container - postgres db image
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=dockeruser
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=api
+    volumes:
+      - ./project/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports: 
+     - "5432:5432"
+
+  # second container - main REST API app
+  app:
+    build: .
+    depends_on:
+     - db
+    volumes:
+     - ./project:/app
+    ports:
+     - "4000:4000"
+
+  
+   
