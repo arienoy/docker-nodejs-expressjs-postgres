@@ -46,7 +46,7 @@ curl --header "Content-type:application/json" --request POST --data '{"name":"<n
 curl --header "Content-type:application/json" --request POST --data "{\"name\":\"<name>\",\"age\":<value>}" http://localhost:4000/api/v1/persons
 ```
 
-   in a second shell. The expected output is: 'Person added with name: <name> & age: <value>' .Note that if you'll try to insert the same person twice - the request will fail & the output will be: 'request failed'.
+   in a second shell. The expected output is: 'Person added with name: ... & age: ...' .Note that if you'll try to insert the same person twice - the request will fail & the output will be: 'request failed'.
 #### GET
 navigate to `http://localhost:4000/api/v1/persons/?age=<value>` in your browser or run command:   
    
